@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
+import BookList from "@/components/BookList";
+import BookOverview from "@/components/BookOverview";
+import { sampleBooks } from "@/dummy";
 
 export default function Home() {
   return (
     <>
-      <Button>Klik ini</Button>
+      <BookOverview {...sampleBooks[0]} />
+      <BookList />
     </>
   );
 }

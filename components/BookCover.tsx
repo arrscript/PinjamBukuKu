@@ -1,16 +1,7 @@
-import React from "react";
 import { cn } from "@/lib/utils";
+import { BookCoverProps, BookCoverVariant } from "@/types/book.types";
 import Image from "next/image";
-import BookCoverSvg from "@/components/BookCoverSvg";
-
-type BookCoverVariant = "small" | "default" | "wide";
-
-interface Props {
-  coverColor?: string;
-  variant?: BookCoverVariant;
-  className?: string;
-  coverImage?: string;
-}
+import BookCoverSvg from "./BookCoverSvg";
 
 const variantStyles: Record<BookCoverVariant, string> = {
   small: "book-cover_small",
@@ -23,13 +14,13 @@ const BookCover = ({
   variant = "default",
   coverColor = "#012B48",
   coverImage = "https://placehold.co/400x600.png",
-}: Props) => {
+}: BookCoverProps) => {
   return (
     <div
       className={cn(
         "relative transition-all duration-300",
         variantStyles[variant],
-        className,
+        className
       )}
     >
       <BookCoverSvg coverColor={coverColor} />

@@ -1,4 +1,4 @@
-interface Book {
+export interface Book {
   id: number;
   title: string;
   author: string;
@@ -13,3 +13,17 @@ interface Book {
   summary: string;
   isLoanedBook?: boolean;
 }
+
+export type BookCoverVariant = "small" | "default" | "wide";
+
+export interface BookCoverProps {
+  coverColor?: string;
+  variant?: BookCoverVariant;
+  className?: string;
+  coverImage?: string;
+}
+export type BookListProps = {
+  title: string;
+  books: Book[];
+  containerClassName?: string;
+};
