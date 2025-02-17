@@ -1,3 +1,5 @@
+import { Book } from "@/types/book.types";
+
 export const navigationLinks = [
   {
     href: "/library",
@@ -55,143 +57,140 @@ export const FIELD_TYPES = {
   password: "password",
 };
 
-export const sampleBooks = [
+export const sampleBooks: Book[] = [
   {
     id: 1,
     title: "Deep Work",
     author: "Cal Newport",
     genre: "Self-Help / Productivity",
     rating: 4.7,
-    total_copies: 50,
-    available_copies: 30,
+    total_copies: 25,
+    available_copies: 20,
     description:
-      "A guide to mastering deep concentration in an era of distractions, helping you maximize productivity and creativity.",
+      "A powerful guide that teaches how to harness deep focus to maximize productivity in a distracted world.",
     color: "#ffffff",
     cover: "https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Learn how to eliminate distractions and develop intense focus to achieve remarkable professional and personal success.",
+      "A powerful guide emphasizing deep concentration to achieve peak productivity in today’s challenging environment.",
+    // isLoanedBook: true,
   },
   {
     id: 2,
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    genre: "Fiction / Adventure",
-    rating: 4.5,
-    total_copies: 70,
-    available_copies: 40,
-    description:
-      "A young shepherd sets out on a quest to find hidden treasure, only to discover the true wealth lies within the journey itself.",
-    color: "#ed6322",
-    cover:
-      "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    summary:
-      "An enchanting fable that teaches us to follow our dreams and embrace life's journey as the ultimate treasure.",
-  },
-  {
-    id: 3,
-    title: "The Power of Now",
-    author: "Eckhart Tolle",
-    genre: "Self-Help / Spirituality",
-    rating: 4.7,
-    total_copies: 60,
-    available_copies: 35,
-    description:
-      "A transformative book that explores the importance of living fully in the present moment and letting go of past regrets and future worries.",
-    color: "#e0f7fa",
-    cover: "https://m.media-amazon.com/images/I/41IXvZ8JwdL.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    summary:
-      "Discover how embracing the present can lead to greater peace, happiness, and fulfillment in life.",
-  },
-  {
-    id: 4,
-    title: "Atomic Habits",
-    author: "James Clear",
-    genre: "Self-Help / Productivity",
-    rating: 4.9,
-    total_copies: 99,
-    available_copies: 65,
-    description:
-      "A practical guide to forming positive habits, breaking bad ones, and making small changes that create remarkable results.",
-    color: "#fffdf6",
-    cover: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    summary:
-      "Learn how tiny adjustments in your daily routine can lead to significant personal and professional growth.",
-  },
-  {
-    id: 5,
-    title: "Man's Search for Meaning",
-    author: "Viktor E. Frankl",
-    genre: "Memoir / Psychology",
-    rating: 4.8,
-    total_copies: 40,
-    available_copies: 25,
-    description:
-      "Viktor Frankl’s memoir chronicles his survival in Nazi concentration camps and explores how meaning can be found even in suffering.",
-    color: "#fafafa",
-    cover:
-      "https://images-na.ssl-images-amazon.com/images/I/41eZuBzkxUL._SX324_BO1,204,203,200_.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    summary:
-      "A profound reflection on how finding purpose can help individuals endure even the most difficult circumstances.",
-  },
-  {
-    id: 6,
     title: "The Midnight Library",
     author: "Matt Haig",
     genre: "Fantasy / Fiction",
     rating: 4.6,
-    total_copies: 20,
+    total_copies: 22,
     available_copies: 12,
     description:
-      "A mystical library that holds infinite books, each presenting a different version of life based on the choices one could have made.",
+      "An intriguing novel following Nora Seed as she navigates the realm between life and death, uncovering endless paths of possibility.",
     color: "#1c1f40",
     cover: "https://m.media-amazon.com/images/I/81J6APjwxlL.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Join Nora Seed on an extraordinary journey through alternate versions of her life, exploring endless possibilities beyond time and space.",
+      "A captivating narrative of choices and alternate lives as Nora Seed journeys between existence and the beyond.",
+    // isLoanedBook: true,
+  },
+  {
+    id: 3,
+    title: "The Psychology of Money",
+    author: "Morgan Housel",
+    genre: "Finance / Self-Help",
+    rating: 4.8,
+    total_copies: 12,
+    available_copies: 6,
+    description:
+      "A deep dive into the behaviors and mindsets that shape our financial decisions, offering fresh insights on wealth.",
+    color: "#ffffff",
+    cover:
+      "https://m.media-amazon.com/images/I/81Dky+tD+pL._AC_UF1000,1000_QL80_.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
+    summary:
+      "A compelling exploration of the psychological factors behind financial success and decision-making, presented with fresh perspectives.",
+  },
+  {
+    id: 4,
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    genre: "Computer Science / Programming",
+    rating: 4.8,
+    total_copies: 60,
+    available_copies: 55,
+    description:
+      "A practical handbook for developers, outlining essential principles for writing efficient and maintainable code.",
+    color: "#080c0d",
+    cover:
+      "https://m.media-amazon.com/images/I/71T7aD3EOTL._UF1000,1000_QL80_.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
+    summary:
+      "A practical guide that highlights core principles and best practices for crafting clean, efficient software.",
+  },
+  {
+    id: 5,
+    title: "You Don't Know JS: Scope & Closures",
+    author: "Kyle Simpson",
+    genre: "Computer Science / JavaScript",
+    rating: 4.7,
+    total_copies: 11,
+    available_copies: 7,
+    description:
+      "A vital resource that demystifies the intricacies of JavaScript, with a special focus on scope and closures.",
+    color: "#f8e036",
+    cover:
+      "https://m.media-amazon.com/images/I/7186YfjgHHL._AC_UF1000,1000_QL80_.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
+    summary:
+      "An essential guide for understanding JavaScript's core mechanisms, particularly its scope and closures, explained in an accessible way.",
+  },
+  {
+    id: 6,
+    title: "Atomic Habits",
+    author: "James Clear",
+    genre: "Self-Help / Productivity",
+    rating: 4.9,
+    total_copies: 102,
+    available_copies: 55,
+    description:
+      "An innovative guide that shows how to build good habits, break bad ones, and improve incrementally every day.",
+    color: "#fffdf6",
+    cover: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
+    summary:
+      "A transformative approach to habit formation, demonstrating practical strategies for achieving daily improvements.",
   },
   {
     id: 7,
-    title: "The Subtle Art of Not Giving a F*ck",
-    author: "Mark Manson",
-    genre: "Self-Help / Motivational",
-    rating: 4.3,
-    total_copies: 35,
-    available_copies: 15,
+    title: "The Pragmatic Programmer",
+    author: "Andrew Hunt, David Thomas",
+    genre: "Computer Science / Programming",
+    rating: 4.8,
+    total_copies: 28,
+    available_copies: 4,
     description:
-      "A bold and humorous take on prioritizing what truly matters in life while letting go of unnecessary worries.",
-    color: "#f0f0f0",
-    cover: "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "A timeless manual offering insights and practices for developers to sharpen their craft.",
+    color: "#100f15",
+    cover:
+      "https://m.media-amazon.com/images/I/71VStSjZmpL._AC_UF1000,1000_QL80_.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Discover how shifting your focus to what genuinely matters can bring greater happiness and freedom.",
+      "A classic guide filled with practical tips and insights for developers striving for excellence in programming.",
   },
   {
     id: 8,
-    title: "The Art of Happiness",
-    author: "Dalai Lama",
-    genre: "Self-Help / Philosophy",
-    rating: 4.4,
-    total_copies: 45,
-    available_copies: 20,
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    genre: "Philosophy / Adventure",
+    rating: 4.5,
+    total_copies: 82,
+    available_copies: 45,
     description:
-      "A powerful discussion on finding true happiness, featuring conversations and reflections with the Dalai Lama.",
-    color: "#fff8e1",
-    cover: "https://m.media-amazon.com/images/I/51mDjVrcyUL.jpg",
-    video:
-      "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "A mystical journey of a young shepherd, Santiago, who embarks on an adventure to fulfill his destiny.",
+    color: "#ed6322",
+    cover:
+      "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg",
+    video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Gain insights into how inner peace, compassion, and wisdom can lead to a more meaningful and joyful life.",
+      "An enchanting tale of adventure and destiny as Santiago sets out on a transformative quest in search of treasure.",
   },
 ];
